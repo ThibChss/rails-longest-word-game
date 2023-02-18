@@ -1,0 +1,20 @@
+<div class="container d-grid text-center justify-content-center">
+  <h1 class="py-4">NEW GAME</h1>
+  <br>
+  <ul class='random-letters pb-3'>
+    <% @letters.each do |l| %>
+    <li><%= l.upcase %></li>
+    <% end %>
+  </ul>
+
+  <br>
+
+  <h4 class="mb-3">What is the longest word you can find ?</h4>
+  <form action="/score" method="POST" data-turbo="false" class="d-grid justify-content-center">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :letters, @letters %>
+    <%= hidden_field_tag :time, @time %>
+    <input type="text" name="word" class="form-control mb-3 text-center" placeholder="Write a word here">
+    <input type="submit" value="GO!" class="btn btn-go">
+  </form>
+</div>

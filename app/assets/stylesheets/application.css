@@ -13,3 +13,71 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Passion+One:wght@400;700&display=swap');
+
+ body {
+  background-color: #E9F8F9;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+p {
+  font-size: 22px;
+}
+
+h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 70px;
+ }
+
+ .random-letters {
+  list-style: none;
+ }
+
+ .random-letters li {
+  display: inline;
+  border-radius: 2px;
+  padding: 10px 15px 10px 15px;
+  background-color: #3E54AC;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px 3px #00000094;
+  box-shadow: 0 1px 3px #00000094;
+ }
+
+ .btn-go {
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #3E54AC;
+  border: none;
+  opacity: 0.7;
+  transition: .3s opacity ease-in-out;
+  color: white;
+}
+
+.btn-go:hover {
+  opacity: 1;
+  background-color: #3E54AC;
+  border: none;
+  color: white;
+}
+
+ .btn-new {
+  font-family: 'Passion One', cursive;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: #3E54AC;
+  border: none;
+  opacity: 0.7;
+  transition: .3s opacity ease-in-out;
+  color: white;
+}
+
+.btn-new:hover {
+  opacity: 1;
+  background-color: #3E54AC;
+  border: none;
+  color: white;
+}
